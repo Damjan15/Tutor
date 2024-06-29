@@ -22,14 +22,20 @@
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-scroll">
+    <nav
+      class="navbar navbar-scroll"
+      role="navigation"
+      aria-label="Main Navigation"
+    >
       <div class="navbar-flex container">
-        <img src="images/logo.svg" alt="Tutor Logo" />
+        <a href="/" aria-label="Logo Home Link">
+          <img src="images/logo.svg" alt="Tutor Logo" />
+        </a>
 
         <div class="main-menu-items">
           <ul class="main-menu-list">
             <li>
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
 
             <li>
@@ -53,13 +59,21 @@
             </li>
 
             <li>
-              <a href="https://facebook.com" target="_blank">
+              <a
+                href="https://facebook.com"
+                target="_blank"
+                aria-label="Follow Us On Facebook"
+              >
                 <i class="fa-brands fa-facebook"></i>
               </a>
             </li>
 
             <li>
-              <a href="https://x.com" target="_blank">
+              <a
+                href="https://x.com"
+                target="_blank"
+                aria-label="Follow Us On Twitter"
+              >
                 <i class="fa-brands fa-twitter"></i>
               </a>
             </li>
@@ -67,13 +81,20 @@
         </div>
 
         <div class="mobile-menu">
-          <div class="mobile-menu-toggle">
+          <div
+            class="mobile-menu-toggle"
+            role="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu-items"
+            aria-label="Open Mobile Menu"
+            tabindex="0"
+          >
             <i class="fas fa-bars fa-2x"></i>
           </div>
-          <div class="mobile-menu-items active">
+          <div class="mobile-menu-items" id="mobile-menu-items">
             <ul class="mobile-menu-list">
               <li>
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
 
               <li>
@@ -97,13 +118,21 @@
               </li>
 
               <li>
-                <a href="https://facebook.com" target="_blank">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  aria-label="Follow Us On Facebook"
+                >
                   <i class="fa-brands fa-facebook"></i>
                 </a>
               </li>
 
               <li>
-                <a href="https://x.com" target="_blank">
+                <a
+                  href="https://x.com"
+                  target="_blank"
+                  aria-label="Follow Us On Twitter"
+                >
                   <i class="fa-brands fa-twitter"></i>
                 </a>
               </li>
@@ -515,23 +544,23 @@
         <div class="stats-content">
           <div class="stats-numbers">
             <div>
-              <h3>2000+</h3>
-              <p>Happy Users</p>
+              <h3 aria-labelledby="stats-happy-users">2000+</h3>
+              <p id="stats-happy-users">Happy Users</p>
             </div>
 
             <div>
-              <h3>358</h3>
-              <p>Issues Solved</p>
+              <h3 aria-labelledby="stats-issues-solved">358</h3>
+              <p id="stats-issues-solved">Issues Solved</p>
             </div>
 
             <div>
-              <h3>980</h3>
-              <p>Good Reviews</p>
+              <h3 aria-labelledby="stats-good-reviews">980</h3>
+              <p id="stats-good-reviews">Good Reviews</p>
             </div>
 
             <div>
-              <h3>216</h3>
-              <p>Case Studies</p>
+              <h3 aria-labelledby="stats-case-studies">216</h3>
+              <p id="stats-case-studies">Case Studies</p>
             </div>
           </div>
 
@@ -565,62 +594,86 @@
     </section>
 
     <!-- Social -->
-     <section class="social section">
+    <section class="social section">
       <div class="container">
         <p>Follow us on social media for updates and news about our courses.</p>
 
         <div class="social-icons">
-          <a href="#">
+          <a
+            href="https://facebook.com/"
+            target="_blank"
+            aria-label="Follow Us On Facebook"
+          >
             <i class="fa-brands fa-facebook fa-2x"></i>
           </a>
 
-          <a href="#">
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            aria-label="Follow Us On Twitter"
+          >
             <i class="fa-brands fa-twitter fa-2x"></i>
           </a>
 
-          <a href="#">
+          <a
+            href="https://instagram.com/"
+            target="_blank"
+            aria-label="Follow Us On Instagram"
+          >
             <i class="fa-brands fa-instagram fa-2x"></i>
           </a>
 
-          <a href="#">
+          <a
+            href="https://linkedin.com/"
+            target="_blank"
+            aria-label="Follow Us On LinkedIn"
+          >
             <i class="fa-brands fa-linkedin fa-2x"></i>
           </a>
 
-          <a href="#">
+          <a
+            href="https://youtube.com/"
+            target="_blank"
+            aria-label="Follow Us On Youtube"
+          >
             <i class="fa-brands fa-youtube fa-2x"></i>
           </a>
 
-          <a href="#">
+          <a
+            href="https://pinterest.com/"
+            target="_blank"
+            aria-label="Follow Us On Pinterest"
+          >
             <i class="fa-brands fa-pinterest fa-2x"></i>
           </a>
         </div>
       </div>
-     </section>
+    </section>
 
-     <!-- Footer -->
-      <footer class="footer">
-        <div class="container footer-flex">
-          <ul class="footer-links">
-            <li>
-              <a href="#">Home</a>
-            </li>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-flex">
+        <ul class="footer-links">
+          <li>
+            <a href="#">Home</a>
+          </li>
 
-            <li>
-              <a href="#">Terms</a>
-            </li>
+          <li>
+            <a href="#">Terms</a>
+          </li>
 
-            <li>
-              <a href="#">Privacy</a>
-            </li>
+          <li>
+            <a href="#">Privacy</a>
+          </li>
 
-            <li>
-              <a href="contact.html">Contact</a>
-            </li>
-          </ul>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
 
-          <p>&copy; 2024 - 2025 Tutor. All rights reserved.</p>
-        </div>
-      </footer>
+        <p>&copy; 2024 - 2025 Tutor. All rights reserved.</p>
+      </div>
+    </footer>
 
     <script src="js/script.js"></script>
   </body>
