@@ -109,6 +109,14 @@ img {
   margin: 4rem 0;
 }
 
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
 /* Navbar */
 
 /* Desktop Navbar */
@@ -356,6 +364,23 @@ img {
   width: 50%;
 }
 
+/* Takeways */
+.takeways-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 1.5rem 0;
+}
+
+.takeways-cards .card {
+  flex-direction: row;
+  text-align: left;
+}
+
+.takeways-cards .card i {
+  margin-right: 1rem;
+}
+
 /* Screens less than 1200 */
 @media screen and (max-width: 1200px) {
   .hero .hero-flex {
@@ -396,7 +421,8 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .chapter-cards {
+  .chapter-cards,
+  .takeways-cards {
     grid-template-columns: 1fr;
   }
 }
