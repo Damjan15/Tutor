@@ -516,6 +516,35 @@ img {
   max-width: 400px;
 }
 
+/* Social */
+.social {
+  background: var(--dark-color);
+  color: #fff;
+  padding: 6rem 2rem;
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 0;
+}
+
+.social a {
+  color: #fff;
+}
+
+.social a:hover {
+  color: var(--secondary-color);
+}
+
+.social p {
+  margin-bottom: 2rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
 /* Screens less than 1200 */
 @media screen and (max-width: 1200px) {
   .hero .hero-flex {
